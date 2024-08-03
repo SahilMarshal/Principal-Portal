@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Principal Portal</title>
+	<meta name="author" content="Sahil">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Sahil, Sahil kurane">
+	<meta name="description" content="Present website is School portal Prototype website developed by Sahil Kurane">
+	<meta property="og:title" content="Sahil Kurane | Prototype | School Portal">
+	<meta property="og:site_name" content="Sahil Kurane | School Portal">
+	<link rel="icon" type="image/x-icon" href="potal favicon.png">
+
+	<!-- Font Awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- stylesheet Link -->
+	<link rel="stylesheet" type="text/css" href="D:\sahil\sahilkurane.in\Principal_Portal.css">
+	
+</head>
+<body>
+
+	<!-- button to show navigation items -->
+	<div id="floating-container">
+		<a href="#masthead"><button id="special-button"><i class="fa-solid fa-angles-up"></i></button></a>
+	</div>
+
+	<!-- Master Header -->
+	
+	<header id="masthead">
+		<nav>
+			<!-- Navigation menu -->
+			<ul class="nav-pills">
+				<!-- List items with links -->
+  				<li class="nav-item"><a class="nav-link" href="#Hero-banner">Home</a></li>
+  				<li class="nav-item"><a class="nav-link" href="#">Job Aids</a></li>
+  				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Main div container -->
+
+	<div id="container">
+		
+		<!-- 1. First section hero banner -->
+
+		<div id="Hero-banner">
+			<!-- Hero banner's left section -->
+			<section class="col-4">
+				<img class="portal-logo" src="principal portal.jpg" alt="Principal Portal logo" title="website logo">
+				<h1>principal portal</h1>
+    			<form class="form-inline search-bar">
+      				<div class="hero-search">
+	      				<input class="form-control search-bar" type="search" placeholder="What you looking for"  aria-label="Search">
+	      				<i class="fa-solid fa-magnifying-glass fa-2xs"></i>      					
+      				</div>
+    			</form>
+			</section>
+
+			<!-- Hero banner's right section -->
+			<section class="col-6">
+				<!-- slider -->
+					<div class="slider-container">
+					 	<div class="slider">
+					 		<div class="slide">
+					 			<!-- slider's first slide -->
+						 		<ul>
+									<li> <a href="#"><p><i class="fa-solid fa-school" style="color: #AD4BFF;"></i></p><h3>school tools	</h3></a></li>
+									<li> <a href="#"><p><i class="fa-brands fa-ubuntu" style="color: #4B83FF;"></i></p><h3>district OPS	</h3></a></li>
+									<li> <a href="#"><p><i class="fa-solid fa-certificate" style="color: #FFAC30;"></i></p><h3>certifications</h3></a> </li>
+									<li> <a href="#"><p><i class="fa-solid fa-graduation-cap" style="color: rgba(255, 101, 27, 0.83);"></i></p> <h3>actions</h3></a></li>
+									<li> <a href="#"><p><i class="fa-solid fa-user" style="color: #FF6B6B;"></i></p> <h3>student info	</h3></a></li>
+									<li> <a href="#"><p><i class="fa-solid fa-circle-question" style="color:#6BD462"></i></p> <h3> what's new	</h3></a> </li>
+								</ul>
+						 	</div>
+						 	<div class="slide">
+						 		<!-- slider's second slide -->
+						 		<ul>
+									<li> <a href="#"></a> <h3>school tips	</h3> </li>
+									<li> <a href="#"></a> <h3>district OPS	</h3></li>
+									<li> <a href="#"></a> <h3>certifications</h3></li>
+									<li> <a href="#"></a> <h3>action		</h3></li>
+									<li> <a href="#"></a> <h3>student info	</h3></li>
+									<li> <a href="#"></a> <h3>what's new	</h3></li>
+								</ul>
+						 	</div>
+					 	</div>	
+					 	<!-- slider's pagination -->
+					 	<div class="pagination">
+    							<button class="nav-btn" onclick="goToSlide(0)">1</button>
+    							<button class="nav-btn" onclick="goToSlide(1)">2</button>
+    							<!-- Add more pagination buttons if you add more slides -->
+  						</div>
+					</div>
+
+					<!-- Sliders end here -->
+					
+			</section>	
+		</div>
+
+		<!-- --2. second container what's due-- -->
+
+		<div id="whats-due">
+
+			<!-- what's due top section navigation -->
+
+			<section class="whats-due-navigation">
+				<h2>what's due</h2>
+				<div class="due-but-group">
+					<ul class="nav nav-pills">
+	  					<li class="nav-item"><a class="nav-link" aria-current="page" href="#">Link</a></li>
+					  	<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+					  	<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+					</ul>
+				</div>
+				<div class="whats-due-navigation-arrow">
+					<i class="fa-solid fa-chevron-left"></i>
+					<h2 id="date"></h2>
+					<i class="fa-solid fa-chevron-right"></i>
+				</div>
+			</section>
+
+			<!-- what's due bottom content items section -->
+			<section class="whats-due-content">
+				<div class="due-row-2">
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+					<div class="due-box">
+						<h5>Fall ShakeOut Earth quake Drill</h5> <div class="due-box-data"><i class="fa-regular fa-clock"></i><p>10-10-2021</p></div>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+
+		<!-- 3. what's new third container -->
+
+		<div id="whats-new">
+			
+			<!-- What's new top section navigation -->
+
+			<section class="whats-due-navigation">
+				<h2>what's new</h2>
+				<h2 id="month-year"></h2>
+			</section>
+
+			<!-- What's new bottom section accordian and cards -->
+
+			<section class="whats-new-content">
+				
+				<!-- What's new bottom sections left side accordian -->
+
+				<div class="new-accordian">
+
+					<!-- accordian -->
+
+					<div class="accordion" id="accordion">
+					    
+					    <!-- accordian 1 -->
+
+					    <div class="accordion-item">
+					        <div class="accordion-title" onclick="toggleAccordion(this)">
+					            <p><i class="fa-solid fa-location-dot fa-xl" style="color:#20C287;"></i></p>Local District
+					        </div>
+					        <div class="accordion-content">
+					            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					            consequat.</p>
+					        </div>
+					    </div>
+					    
+					    <!-- accordian 2 -->
+
+					    <div class="accordion-item">
+					        <div class="accordion-title" onclick="toggleAccordion(this)">
+					            <p><i class="fa-solid fa-building-columns fa-xl" style="color: #20c287;"></i></p>School Type
+					        </div>
+					        <div class="accordion-content">
+					            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					            consequat.</p>
+					        </div>
+					    </div>
+					    
+					    <!-- accordian 3 -->
+
+					    <div class="accordion-item">
+					        <div class="accordion-title" onclick="toggleAccordion(this)">
+					            <p><i class="fa-solid fa-location-dot fa-xl" style="color:#20C287;"></i></p>Category
+					        </div>
+					        <div class="accordion-content">
+					            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					            consequat.</p>
+					        </div>
+					    </div>
+					</div>
+
+					<!-- accordian end here -->
+
+					<div class="button-parent">
+						<button class="new-button">view more <i class="fa-solid fa-right-long"></i></button>
+					</div>
+
+				</div>
+
+				<!-- What's new bottom sections right side's cards -->
+
+				<div class="new-cards">
+					<div class="new-box">
+						<h4>Data and Accountability</h4>
+						<p>Fall 2021 School Experience Survey</p>
+						<div class="due-box-data"><i class="fa-regular fa-calendar"></i><p>5-10-2021</p></div>
+					</div>
+					<div class="new-box">
+						<h4>Data and Accountability</h4>
+						<p>Fall 2021 School Experience Survey</p>
+						<div class="due-box-data"><i class="fa-regular fa-calendar"></i><p>5-10-2021</p></div>
+					</div>
+					<div class="new-box">
+						<h4>Data and Accountability</h4>
+						<p>Fall 2021 School Experience Survey</p>
+						<div class="due-box-data"><i class="fa-regular fa-calendar"></i><p>5-10-2021</p></div>
+					</div>
+					<div class="new-box">
+						<h4>Data and Accountability</h4>
+						<p>Fall 2021 School Experience Survey</p>
+						<div class="due-box-data"><i class="fa-regular fa-calendar"></i><p>5-10-2021</p></div>
+					</div>
+					<div class="new-box">
+						<h4>Data and Accountability</h4>
+						<p>Fall 2021 School Experience Survey</p>
+						<div class="due-box-data"><i class="fa-regular fa-calendar"></i><p>5-10-2021</p></div>
+					</div>
+					<div class="new-box">
+						<h4>Data and Accountability</h4>
+						<p>Fall 2021 School Experience Survey</p>
+						<div class="due-box-data"><i class="fa-regular fa-calendar"></i><p>5-10-2021</p></div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<!-- 4. Fourth container certification -->
+
+		<div id="certificate">
+
+			<!-- Certificate's left side section image -->
+
+			<section class="certificate-image">
+				<img src="Students.jpg" alt="Studens standing in corrider" title="Students Image">
+				<div class="cert-img-box"></div>
+			</section>
+
+			<!-- Certificate's right side section cetificates list  -->
+
+			<section class="certificate-list">
+				<h2>certifications</h2>
+				<!-- 3 certification boxes -->
+				<div class="cert-box">
+					<div class="cert-box-data"><i class="fa-solid fa-medal fa-xl style= "color: red; ></i></div>
+					<p>Administrator Certification</p> 
+				</div>
+				<div class="cert-box">
+					<div class="cert-box-data"><i class="fa-solid fa-medal fa-xl style= "color: red; ></i></div>
+					<p>Administrator Certification</p> 
+				</div>
+				<div class="cert-box">
+					<div class="cert-box-data"><i class="fa-solid fa-medal fa-xl style= "color: red; ></i></div>
+					<p>Administrator Certification</p> 
+				</div>
+				<div class="button-parent">
+					<button class="cert-but">see more<i class="fa-solid fa-right-long"></i></button>					
+				</div>
+			</section>
+			
+		</div>
+
+		<!-- 5. Fifth container District ops  -->
+
+		<div id="ops">
+
+			<!-- District ops top section navigatin -->
+
+			<section class="ops-row">
+				<h2>district ops</h2>
+				<form class="sect-search-bar">
+	      			<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+	      			<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+	    		</form>
+			</section>
+
+			<!-- Distrit ops bottom or second section  -->
+
+			<section class="ops-list">
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>Active Shooter - LAUSD Online Training</p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>business continuity plan upload</p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>school closure toolkit #1 </p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>business continuity plan upload</p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>emergency drill survey </p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>school closure toolkit #2 </p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>device distribution progress icon</p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>publicity release form </p>
+				</div>
+				<div class="ops-box">
+					<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+					<p>integrated safe school plan </p>
+				</div>
+			</section>
+
+			<div class="button-parent"><button class="ops-but">view more<i class="fa-solid fa-right-long"></i></button></div>
+
+		</div>
+
+		<!-- 5. Fifth container Action -->
+
+		<div id="action">
+
+			<!-- section fo backgrond image -->
+
+			<section class="bgimg"></section>
+
+			<!-- second section of content -->
+
+			<section class="action-sect">
+
+				<div class="act-row">
+					<h2>actions</h2>
+					
+					<!-- search bar  -->
+
+					<form class="sect-search-bar">
+		      			<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+		      			<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+		    		</form>
+				</div>
+
+				<div class="act-list">
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>Annual GATE Report</p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>Elementory PE minutes  </p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>Elementory PE schedule</p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>ESSA principal certification</p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>interscholastic athletics </p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>observance of constitution day  </p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>OEHS safety defciencies</p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>parent and community service</p>
+					</div>
+					<div class="act-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+		 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+						<p>state testing requirements </p>
+					</div>
+				</div>
+
+			</section>
+			
+		</div>
+
+		<!-- 6. sixth container Student information  -->
+
+		<div id="info">
+			<div class="info-row">
+
+				<!-- student info Top section  -->
+
+				<section class="info-row-1">
+
+					<h2>student info</h2>
+
+					<!-- search bar -->
+
+					<form class="sect-search-bar">
+	      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+	      				<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+	    			</form>
+
+				</section>
+
+				<div class="info-row-2">
+
+					<!-- girl image -->
+
+					<div class="col-5">
+						<img src="girl.png" alt="College girl" title="Girl">		
+					</div>
+					
+					<div class="col-7">
+						<div class="info-boxes">
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>Amplify/DibelsHelp icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>MagnetHelp icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>Clever Help icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>MiSiSHelp icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>Amplify/DibelsHelp icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>MyDataHelp icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>Clever Help icon</p>
+							</div>
+							<div class="info-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+		  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+		  							<p>Parent PortalHelp icon</p>
+							</div>
+						</div>
+						<div class="button-parent">
+							<button class="info-but">view more<i class="fa-solid fa-right-long"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 7. safe step last container -->
+			<div id="step">
+				<section class="step-row">	
+						<h2>safe steps to safe schools</h2>
+						<form class="sect-search-bar">
+		      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+		      				<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+		    			</form>
+				</section>
+
+				<section class="cards">
+						<div class="card">
+		  					<img src="cards (1).jpg" class="card-img-top" alt="Back To School Family Guide" title="Girl">
+		  					<div class="card-body">
+		    					<p class="card-text">Back To School Family </p>
+		  					</div>
+						</div>
+						<div class="card">
+		  					<img src="cards (2).jpg" class="card-img-top" alt="COVID emergency preparedness" title="">
+		  					<div class="card-body">
+		    					<p class="card-text">COVID emergency preparedness </p>
+		  					</div>
+						</div>
+						<div class="card">
+		  					<img src="cards (3).jpg" class="card-img-top" alt="COVID-19 resource help" title="">
+		  					<div class="card-body">
+		    					<p class="card-text">COVID-19 resource help </p>
+		  					</div>
+						</div>
+						<div class="card">
+		  					<img src="cards (4).jpg" class="card-img-top" alt="early education help" title="">
+		  					<div class="card-body">
+		    					<p class="card-text">early education help </p>
+		  					</div>
+						</div>
+				</section>
+			</div>
+
+			<!-- footer -->
+			<footer>
+				<div class="foot">
+					<h4>Browsers and Operating Systems Compatibility</h4>
+					<p>© 2021 - LOS ANGELES UNIFIED SCHOOL DISTRICT 333 S Beaudry Ave., Los Angeles, CA 90017</p>
+					<hr>
+					<p>Developed By Sahil Kurane</p>
+				</div>
+			</footer>
+
+		<!-- Following closing div is Main container div -->
+
+	</div>
+
+	<!-- Your HTML ends here -->
+
+
+
+	<!-- JavaScrih5t starts here -->
+<script>
+	// first section Hero baaner slider JS -----
+  	let currentSlide = 0;
+	const slides = document.querySelectorAll('.slide');
+	const slidesCount = slides.length;
+
+	function goToSlide(n) {
+	  currentSlide = n;
+	  updateSliderPosition();
+	}
+
+	function updateSliderPosition() {
+	  const slider = document.querySelector('.slider');
+	  const slideWidth = slides[0].clientWidth;
+	  slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+	}
+
+	// Initial position of the slider
+	updateSliderPosition();
+
+	// what's due second section date in second section -----
+	n =  new Date();
+	y = n.getFullYear();
+	m = n.getMonth() + 1;
+	month = n.getMonth();
+	d = n.getDate();
+	let months = [ "Jan", "Feb", "March", "April", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+	let monthText = months[month];
+
+	document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+	document.getElementById("month-year").innerHTML = monthText + " " + y;
+
+
+	// Accordian item ---------
+	// Function to toggle accordion content
+	function toggleAccordion(element) {
+	    // Close all accordion items
+	    var accordion = document.getElementById('accordion');
+	    var items = accordion.getElementsByClassName('accordion-item');
+	    for (var i = 0; i < items.length; i++) {
+	        var item = items[i];
+	        var content = item.querySelector('.accordion-content');
+	        var title = item.querySelector('.accordion-title');
+	        if (content !== element.nextElementSibling && content.classList.contains('activeacc')) {
+	            content.classList.remove('activeacc');
+	            title.classList.remove('activeacc');
+	        }
+	    }
+	    // Toggle the clicked accordion item
+	    var content = element.nextElementSibling;
+	    content.classList.toggle('activeacc');
+	    element.classList.toggle('activeacc');
+	}
+
+	// Top scrolling button
+	let mybutton = document.getElementById("floating-container");
+
+	// When the user scrolls down 800px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+</script>
+
+</body>
+</html>
