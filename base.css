@@ -343,7 +343,7 @@ h2{
 		margin-top: 0.7em;
 	}
 	.form-inline.search-bar{
-		width: 70%;
+		width: 81%;
 		margin: 1em auto;
 	}
 	.form-inline.search-bar input{
@@ -964,6 +964,14 @@ h2{
 		height: 3rem;
 		padding: 1em 1.4em;
 	}
+	.ops-box-icon{
+		width: 1rem;
+		height: 1rem;
+	}
+	.ops-box-icon i {
+		font-size: 1.4rem;
+		line-height: 0.8;
+	}
 }
 
 /*5. ============ Fifth container action ============ */
@@ -1037,10 +1045,11 @@ h2{
 	}
 	.action-sect{
 		padding: 0 1em;
+		top: 4rem
 	}
 	.act-list{
 		padding: 2em 0;
-		grid-template-columns: 19rem;
+		grid-template-columns: 19.9rem;
 	}
 	.act-box{
 		padding: 15px;
