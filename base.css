@@ -1,6 +1,5 @@
 :root{
-	--green: #20C287; --cert: #FFAC30; --ops: #2D69F0; --act: #FF651B; --info: #FF4949; --lightblack: #14183E;
-	--bg: #F3F4F8;
+	--green: #20C287; --cert: #FFAC30; --ops: #2D69F0; --act: #FF651B; --info: #FF4949; --lightblack: #14183E; --bg: #F3F4F8;
 }
 body{
 	position: relative; overflow-x: hidden;
